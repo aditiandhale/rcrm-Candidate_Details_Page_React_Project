@@ -1,0 +1,287 @@
+/* Panel Layout */
+.panel {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
+  margin: 0; /* remove extra margin */
+  width: 100%; /* full width */
+  box-sizing: border-box;
+}
+
+/* Left Section (75%) */
+.left-section {
+  flex: 1;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right Section (Tabs, 25%) */
+.tabs-wrapper {
+  width: 25%; /* full width of its container */
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
+  box-sizing: border-box;
+}
+
+/* Avatar */
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Candidate Info */
+.basic-row {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.candidate-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  padding: 5px;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.title-location {
+  font-size: 15px;
+  color: #6b7280;
+  gap: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.icon-circles {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-circles i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.icon-circles.facebook {
+  background: #1877f2;
+}
+.icon-circles.facebook:hover {
+  background: #165cdb;
+}
+
+.icon-circles.twitter {
+  background: #1da1f2;
+}
+.icon-circles.twitter:hover {
+  background: #0d95e8;
+}
+
+.icon-circles.linkedin {
+  background: #0a66c2;
+}
+.icon-circles.linkedin:hover {
+  background: #004182;
+}
+
+.icon-circles.github {
+  background: #181717;
+}
+.icon-circles.github:hover {
+  background: #000;
+}
+
+.icon-circles.xing {
+  background: #006567;
+}
+.icon-circles.xing:hover {
+  background: #004b4c;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* Contact Row */
+.contact-row {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Smaller Icons */
+.contact-row i {
+  font-size: 17px; /* reduced size */
+  color: #374151;
+  padding: 5px; /* reduced padding */
+}
+
+/* Email & Phone in Blue */
+.contact-row span {
+  color: #1a73e8; /* blue color */
+  font-weight: 500;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.contact-row span:hover {
+  text-decoration: underline;
+}
+
+/* User Detail Section */
+.user-detail {
+  display: flex;
+  align-items: center;
+  color: #374151;
+}
+
+.user-detail i {
+  font-size: 17px;
+  margin-right: 4px;
+  color: #374151;
+}
+
+.user-detail span {
+  margin-right: 12px;
+}
+
+/* Info Table */
+.info-table {
+  width: 100%; /* full width */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 40px;
+  padding: 20px;
+}
+
+/* Info Rows */
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.info-row strong {
+  min-width: 180px; /* keep labels aligned */
+  font-weight: 600;
+  color: #111827;
+}
+
+.info-row .muted {
+  color: #4b5563;
+  flex: 1;
+}
+
+.info-row:nth-child(4) {
+  margin-left: -1px;
+}
+
+.info-row:nth-child(4) .muted {
+  margin-left: -10px;
+}
+
+/* Assigned Jobs Card */
+.assigned-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
+}
+
+/* Contact Button */
+.contact-btn {
+  margin-left: auto; /* pushes button + icons to right */
+  background: #fee2e2; /* light red */
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: #fecaca;
+}
+
+/* Right Side */
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-icons {
+  display: flex;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.icon-box {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db; /* light grey border */
+  border-radius: 8px; /* rounded corners */
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-box i {
+  font-size: 20px;
+  color: #6b7280; /* grey */
+}
+
+.icon-box:hover {
+  border-color: #1a73e8; /* blue border on hover */
+  background-color: #f3f4f6; /* light grey hover */
+}

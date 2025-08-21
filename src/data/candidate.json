@@ -1,0 +1,28 @@
+{
+    "id": 231,
+    "name": "William Sample",
+    "title": "Senior Product Manager",
+    "location": " United States Dallas",
+    "email": "williamsample@gmail.com",
+    "phone": "+91 9021232326",
+    "currentOrganization": "World Bank Group",
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ],
+    "availableFrom": "Jul, 14, 2023",
+    "currentSalary": "$6000",
+    "noticePeriod": "90 Days",
+    "fullAddress": "9400 Ashton Rd, Philadelphia...",
+    "totalExperience": "5 Years",
+    "resume": "Resume",
+    "summary": "Current Organization",
+    "currentEmploymentStatus": "Employed",
+    "dateOfBirth": "15 June 1993",
+    "relevantExperience": "7 Years",
+    "salaryExpectation": "$9000",
+    "status": "Submitted to Client",
+    "salaryType": "Annual",
+    "languageSkills": "English(Elementary proficiency)"
+}

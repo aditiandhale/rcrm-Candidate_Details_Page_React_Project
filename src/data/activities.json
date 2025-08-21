@@ -1,0 +1,31 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "type": "Note",
+      "status": "To Do",
+      "content": "Lorem dolore sit et aute cupidatat eu Lorem tempor proident consectetur. In dolore molit laborum ex cillum laboris occaecat ipsum Lorem cupidatat.",
+      "associations": "1 Association(s)",
+      "assignee": "John Doe",
+      "date": "Jul 12, 2023, 11:54 am"
+    },
+    {
+      "id": 2,
+      "type": "Note",
+      "status": "To Do",
+      "content": "Lorem dolore sit et aute cupidatat eu Lorem tempor proident consectetur. In dolore molit laborum ex cillum laboris occaecat ipsum Lorem cupidatat.",
+      "associations": "1 Association(s)",
+      "assignee": "John Doe",
+      "date": "Jul 12, 2023, 11:54 am"
+    },
+    {
+      "id": 3,
+      "type": "Note",
+      "status": "To Do",
+      "content": "Lorem dolore sit et aute cupidatat eu Lorem tempor proident consectetur. In dolore molit laborum ex cillum laboris occaecat ipsum Lorem cupidatat.",
+      "associations": "1 Association(s)",
+      "assignee": "John Doe",
+      "date": "Jul 12, 2023, 11:54 am"
+    }
+  ]
+}

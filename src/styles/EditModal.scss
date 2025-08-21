@@ -1,0 +1,101 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center modal vertically */
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  width: 720px;
+  max-width: 95%;
+  max-height: 90vh; /* restrict height */
+  overflow-y: auto; /* scroll inside modal if content exceeds */
+  box-sizing: border-box;
+}
+
+.modal-header {
+  margin-bottom: 20px; /* spacing between header and table */
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center; /* center header */
+}
+
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-table tr {
+  border-bottom: none; /* remove row underline */
+}
+
+.modal-table td {
+  padding: 8px 12px;
+  vertical-align: top;
+}
+
+.modal-table td.label {
+  width: 200px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.modal-table td.input-cell input,
+.modal-table td.input-cell textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #e6e9ef;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #111827;
+  resize: vertical;
+}
+
+.modal-table td.input-cell.full-width input,
+.modal-table td.input-cell.full-width textarea {
+  width: 100%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.modal-actions button.cancel {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.modal-actions button.save {
+  background: #1a73e8;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 95%;
+    padding: 16px;
+  }
+  .modal-table td.label {
+    width: 120px;
+  }
+}

@@ -1,0 +1,182 @@
+.tabs-container {
+  width: 100%; // full width of parent
+  background-color: #f5f5f5; // grey background
+  box-sizing: border-box;
+  overflow-x: hidden; // prevent extra right space
+}
+
+/* Icon Row */
+.icon-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  background-color: #ffffff; // circle background
+  padding: 20px;
+}
+
+.icon-circle-tab {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e2f4f8; // circle background
+  cursor: pointer;
+}
+
+.icon-circle-tab i {
+  color: #3564c9; // icon color
+  font-size: 20px;
+}
+
+/* Tabs */
+.tab-list {
+  display: flex;
+  background-color: #e5e7eb; // grey background for tabs
+  padding: 6px 8px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tab {
+  flex: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+  white-space: nowrap;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #d1d5db;
+  }
+}
+
+.tab.active {
+  color: #1a73e8;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: 1px solid #1a73e8;
+}
+
+/* Activities List */
+.activities-list {
+  padding-top: 12px;
+  padding: 10px;
+}
+
+.activity-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+}
+
+.activity-type {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* keeps small spacing */
+}
+
+/* Icon with circular light blue background */
+.activity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #e6f0ff; /* light blue */
+}
+
+/* Icon inside */
+.activity-icon i {
+  color: #1a73e8;
+  font-size: 14px;
+}
+
+/* Note text */
+.activity-type-text {
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* To Do badge */
+.activity-status {
+  background-color: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #000;
+}
+
+.activity-content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #4b5563;
+}
+
+.activity-footer {
+  margin-top: 12px; /* space between content and footer */
+}
+
+.activity-footer .activity-meta {
+  display: flex;
+  flex-direction: column; /* associations on top */
+  gap: 6px; /* space between associations and row */
+}
+
+.activity-meta .associations {
+  color: #1a73e8;
+  font-size: 11px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Assignee and Date in one row */
+.activity-meta .assignee-date-row {
+  display: flex;
+  justify-content: space-between; /* pushes assignee left, date right */
+  align-items: center;
+  gap: 16px;
+}
+
+.activity-meta .assignee,
+.activity-meta .date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #000;
+
+  i {
+    font-size: 12px;
+    color: #000;
+  }
+}

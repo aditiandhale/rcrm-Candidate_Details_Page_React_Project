@@ -1,0 +1,249 @@
+/* Tabs full width */
+.tab-list-assign {
+  display: flex;
+  justify-content: space-between; /* spread tabs equally */
+  align-items: center;
+  background: #f1f1f1;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tab {
+  flex: 1; /* each tab takes equal width */
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #1a73e8;
+}
+
+.tab.active {
+  background: #ffffff; /* active tab white */
+  color: #1a73e8;
+  font-weight: 500;
+  border-bottom: 2px solid #1a73e8;
+}
+
+/* Jobs Header */
+.jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.jobs-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #1c59dd;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #1a73e8;
+  border: 1px solid #1a73e8;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Jobs list */
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.job-item {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 0.8fr; /* 5 equal-like columns */
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  //  gap: 5px;
+}
+
+.job-column.job-meta {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  gap: 10px; /* spacing between rows */
+  font-size: 18px;
+  color: #374151;
+}
+
+.job-column.job-meta .meta-item {
+  display: flex;
+  align-items: center; /* align icon + text in a row */
+  gap: 6px; /* space between icon and text */
+}
+
+.job-column.job-meta i {
+  font-size: 14px; /* smaller icon size */
+  color: #374151;
+}
+
+.job-column.job-meta span {
+  font-size: 15px; /* keep text readable */
+  font-weight: 500;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 2px; /* space between icon and text */
+  font-size: 10px;
+  color: #374151;
+  .job-column.job-meta {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    gap: 10px; /* spacing between rows */
+    font-size: 18px;
+    color: #374151;
+  }
+
+  .job-column.job-meta .meta-item {
+    display: flex;
+    align-items: center; /* align icon + text in a row */
+    gap: 8px; /* space between icon and text */
+  }
+
+  .job-column.job-meta i {
+    font-size: 18px; /* adjust icon size */
+    color: #374151;
+  }
+
+  .job-column.job-meta span {
+    font-size: 18px; /* increase text size */
+    font-weight: 500;
+  }
+
+  height: 18px;
+}
+
+.job-info {
+  display: flex;
+  align-items: center;
+
+  .job-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px; // spacing between avatar and text
+  }
+
+  .job-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f59e0b; // amber circle like your screenshot
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .job-details {
+    display: flex;
+    flex-direction: column;
+
+    .job-title {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .job-company {
+      font-size: 13px;
+      color: #6b7280;
+    }
+  }
+}
+
+/* Status badge */
+.status-badge {
+  background-color: #f3f4f6; // light grey background
+  color: #111827; // dark text for contrast
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 1px;
+  display: inline-block;
+}
+
+.job-column.job-files .btn-outline {
+  background-color: transparent; // keep it transparent
+  color: black; // text black
+  border: 1px solid black; // black border
+}
+
+.job-column.job-files .btn-outline:hover {
+  background-color: gray; // on hover, fill black
+  color: white; // text white on hover
+  border-color: grey;
+}
+
+/* Slider toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* OFF color */
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #1a73e8; /* ON color */
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
