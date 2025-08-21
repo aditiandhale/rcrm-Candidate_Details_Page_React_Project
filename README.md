@@ -25,30 +25,42 @@ Candidate Information Display
 - Responsive Design - Optimized for desktops, tablets, and mobile devices.
 - Tab Navigation - Implemented tabs as per the wireframe for better content organization.
 - Icon Integration - Used Boxicons for uniformity and a modern look.
-- 
-Challenges Faced 
-1. Wireframe-to-UI Accuracy - Ensuring pixel-perfect alignment with the Figma wireframe. 
-2. State Management - Managing candidate data updates across multiple components. 
-3. Responsive Design Issues - Handling different screen sizes without using any CSS frameworks. 
-4. Edit Functionality Synchronization - Making sure edited data updates immediately in the UI without refreshing.
-   
-Solutions Implemented - 
-- Used flexbox and grid layouts for precise UI alignment. 
-- Managed data globally using React Context API for seamless updates.
-- Wrote custom media queries to ensure responsiveness.
-- Used controlled components in the edit modal to synchronize data. 
 
-Conclusion & Future Enhancements 
-The project successfully meets the given requirements and closely follows the provided wireframe. 
-The UI is clean, responsive, and user-friendly. 
+Project Structure - 
+  rcrm-candidate-details/
+├── public/          # Static assets
+├── src/
+│   ├── components/  
+│   ├── pages/       
+│   ├── store/      
+│   ├── styles/     
+│   ├── App.js
+│   ├── index.js
+├── package.json
+└── README.md
 
-Future improvements could include: 
-- Integrating a real backend API instead of mock JSON.
-- Implementing form validation for better user input handling.
-- Adding unit tests to improve code quality and maintainability.
+Installation
+
+Follow these steps to set up the project locally:
+
+# Clone the repository
+git clone https://github.com/aditiandhale/rcrm-Candidate_Details_Page_React_Project.git
+
+# Navigate into the project directory
+cd rcrm-candidate-details
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+Usage
+
+Open http://localhost:5175/ in your browser.
+
+View and edit candidate details easily.
+
+
 
       
-Submitted By: Aditi Andhale 
-Role: Frontend Developer 
-Project: Candidate Details Page 
-Framework Used: React.js
